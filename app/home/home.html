@@ -1,0 +1,22 @@
+<section class="perfil column">
+	<figure class="image-background column">
+		<img src="image/background.jpg" alt="" height="500px">
+	</figure>
+	<figure class="image-perfil column" >
+		<img src="image/meTW.png" alt="" width="200px">
+	</figure>
+	<div class="datosbasicos">
+		<span>Carlos Andrés Rodriguez |</span>
+		<span>Desarrollador Frontend y Emprendedor</span>
+	</div>		
+</section>
+<section class="portafolio column">
+	<h1>Portafolio</h1>	
+	<div ng-repeat="home in homes" class="column">
+		<figure class="image-portafolio column">
+			<img ng-src="{{home.urlImg}}" alt="" width="50%">
+		</figure>
+		<span class="title-portafolio" ng-bind="home.portafolio"></span>
+		<span class="cargo" ng-bind="home.tipo"></span>
+	</div>	
+</section>
