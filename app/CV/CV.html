@@ -1,21 +1,36 @@
-<section>
+<section class="CV">
 	<figure class="image-background-CV column">
-		<img src="image/bgCV.jpg" alt="" height="500px">
+		<img src="image/bgCV.jpg" alt="" height="210px">
 	</figure>
-	<h1>CURRICULUM</h1>
+	<h2 class="title-CV">CURRICULUM</h2>
 	<article>
-		<h2>Introduccion</h2>
-		<p></p>
-		<div class="experiencia">
-			<h3>Experiencia</h3>
-			<span class="nombre-empresa"></span>
-			<span class="cargo"></span>
-			<span class="ano"></span>	
+		<h2>Introducción</h2>
+		<p ng-bind="cv.introduccion">s</p>
+		<h3>Experiencia</h3>
+		<div class="experiencia column top" ng-repeat="ex in cv.experiencias">			
+			<span class="nombre-empresa icon-industry bold">
+				<span ng-bind="ex.empresa"></span>
+			</span>
+			<span ng-bind="ex.cargo" class="cargo orange"></span>
+			<span ng-bind="ex.ano" class="ano"></span>
+			<span class="descripcion" ng-bind="ex.descripcion"></span>
 		</div>
-		<div class="estudios">
-			<h3>Estudios</h3>
-			<span class="nombre-institucion"></span>
-			
-		</div>	
+		<h3>Estudios</h3>
+		<div class="estudios column top" ng-repeat="estudio in cv.estudios">			
+			<span class="nombre-institucion icon-bank bold">
+				<span ng-bind="estudio.institucion"></span>
+			</span>
+			<span ng-bind="estudio.programa" class="programa orange"></span>
+			<span ng-bind="estudio.ano" class="ano"></span>
+			<span class="descripcion" ng-bind=""></span>
+		</div>
+		<h3>Cursos</h3>
+		<div class="cursos column top" ng-repeat="curso in cv.cursos">
+			<span class="nombre-curso icon-school bold">
+				<span ng-bind="curso.nombre"></span>
+			</span>
+			<a href="{{curso.url}}" target="_blank"><span ng-bind="curso.institucion" class="institucion orange"></span></a>
+			<span ng-bind="curso.ano" class="ano"></span>
+		</div>
 	</article>
 </section>

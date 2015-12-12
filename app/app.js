@@ -4,7 +4,9 @@
 		'home.controller',
 		'home.services',
 		'detailPortfolio.controllers',
-		'detailPortfolio.services'
+		'detailPortfolio.services',
+		'cv.controllers',
+		'cv.services'
 	]);
 
 	app.config(['$routeProvider', function ($routeProvider) {
