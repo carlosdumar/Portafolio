@@ -14,9 +14,9 @@
 	<h1>Portafolio</h1>	
 	<div ng-repeat="home in homes" class="column">
 		<figure class="image-portafolio column">
-			<img ng-src="{{home.urlImg}}" alt="" width="50%">
+			<a href="#/portafolio/{{home.portafolio}}" class="column"><img ng-src="{{home.urlImg}}" alt="" width="50%"></a>
 		</figure>
-		<span class="title-portafolio" ng-bind="home.portafolio"></span>
+		<a href="#/portafolio/{{home.portafolio}}"><span class="title-portafolio" ng-bind="home.portafolio"></span></a>		
 		<span class="cargo" ng-bind="home.tipo"></span>
 	</div>	
 </section>

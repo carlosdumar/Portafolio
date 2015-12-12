@@ -1,0 +1,12 @@
+<div class="detallePortafolio column">	
+	<article class="description-detalle column">
+		<h2 class="title-portfolio" ng-bind="details.title"></h2>
+		<div class="container-detailBlog" ng-repeat="detail in details.blog">			
+			<figure class="image-detalle column">
+				<img ng-src="{{detail.url}}" alt="" width="50%">
+			</figure>
+			<p ng-bind="detail.title"></p>
+			<span ng-bind="detail.text"></span>
+		</div>					
+	</article>	
+</div>
