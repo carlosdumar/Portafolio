@@ -6,7 +6,9 @@
 		'detailPortfolio.controllers',
 		'detailPortfolio.services',
 		'cv.controllers',
-		'cv.services'
+		'cv.services',
+		'blog.controllers',
+		'blog.services'
 	]);
 
 	app.config(['$routeProvider', function ($routeProvider) {
@@ -24,7 +26,7 @@
 				templateUrl: 'app/blog/blog.html',
 				controller: 'BlogController'
 			})
-			.when('/detailBlog', {
+			.when('/detailBlog/:name', {
 				templateUrl: 'app/detailBlog/detailBlog.html',
 				controller: 'DetailBlogController'
 			})
