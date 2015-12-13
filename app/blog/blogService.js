@@ -5,10 +5,10 @@
 
 			var blogs = 
 				[
-					{title: 'Titulo Post', url: 'image/webdevelopment.jpg', date: 'Noviembre 19, 2015'},
-					{title: 'Titulo Post2', url: 'image/webdevelopment.jpg', date: 'Octubre 20, 2014'},
-					{title: 'Titulo Post3', url: 'image/webdevelopment.jpg', date: 'Octubre 20, 2014'},
-					{title: 'Titulo Post4', url: 'image/webdevelopment.jpg', date: 'Octubre 10, 2013'}
+					{title: 'Titulo Post', url: 'image/webdevelopment.jpg', date: 'Noviembre 19, 2015', description: 'Descripcion Blog Descripcion Blog Descripcion Blog Descripcion Blog'},
+					{title: 'Titulo Post2', url: 'image/webdevelopment.jpg', date: 'Octubre 20, 2014', description: 'Descripcion Blog Descripcion Blog Descripcion Blog Descripcion Blog'},
+					{title: 'Titulo Post3', url: 'image/webdevelopment.jpg', date: 'Octubre 20, 2014', description: 'Descripcion Blog Descripcion Blog Descripcion Blog Descripcion Blog'},
+					{title: 'Titulo Post4', url: 'image/webdevelopment.jpg', date: 'Octubre 10, 2013', description: 'Descripcion Blog Descripcion Blog Descripcion Blog Descripcion Blog'}
 				]
 
 			function all() {
@@ -37,7 +37,8 @@
 				return deferred.promise;
 			}
 			return {
-				all: all
+				all: all,
+				byName: byName
 			}
 		}]);
 })();

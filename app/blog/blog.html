@@ -2,11 +2,11 @@
 	<article class="lista-blogs">
 		<h1>NUEVOS</h1>
 		<div class="blog column top" ng-repeat="blog in listaBlogs">
-			<a href="">
+			<a href="#/detailBlog/{{blog.title}}">
 				<img ng-src="{{blog.url}}" alt="" width="90%">
 			</a>
 			<span ng-bind="blog.date" class="time">dfad</span>
-			<span ng-bind="blog.title" class="title-blog"></span>
+			<a href="#/detailBlog/{{blog.title}}"></a><span ng-bind="blog.title" class="title-blog"></span>
 		</div>
 	</article>
 </section>
