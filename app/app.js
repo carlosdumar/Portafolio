@@ -8,7 +8,9 @@
 		'cv.controllers',
 		'cv.services',
 		'blog.controllers',
-		'blog.services'
+		'blog.services',
+		'contacto.services',
+		'contacto.controllers'
 	]);
 
 	app.config(['$routeProvider', function ($routeProvider) {
@@ -33,6 +35,10 @@
 			.when('/CV', {
 				templateUrl: 'app/CV/CV.html',
 				controller: 'CVController'
+			})
+			.when('/contacto', {
+				templateUrl: 'app/contacto/contacto.html',
+				controller: 'ContactoController'
 			})
 			.otherwise({
 				redirecTo: '/'
