@@ -14,7 +14,7 @@
 					estudios: [
 						{ institucion: 'Universidad Santo Tomas', programa: 'Ingenieria de Telecomunicaiones', ano: '2009', descripcion: ''},
 						{ institucion: 'Universidad EAFIT', programa: 'Diplomado en Arquitectura y Desarrollo de Software para Internet', ano: '2010 - Presente', descripcion: ''},
-						{ institucion: 'Universidad Pontificie Bolivariana', programa: 'Especializacion en Gerencia', ano: '2015 - Presente', descripcion: ''}
+						{ institucion: 'Universidad Pontificia Bolivariana', programa: 'Especializacion en Gerencia', ano: '2015 - Presente', descripcion: ''}
 					],
 					cursos: [
 						{ nombre: 'Curso Profesional de Frontend', institucion: 'Platzi', ano: '2014', url: 'https://platzi.com/usuarios/carlosdumar/', descripcion: ''},

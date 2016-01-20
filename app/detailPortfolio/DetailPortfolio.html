@@ -1,6 +1,11 @@
 <div class="detallePortafolio column">	
 	<article class="description-detalle column">
-		<h2 class="title-portfolio" ng-bind="details.title"></h2>
+		<h2 class="title-portfolio" ng-bind="details.subtitle"></h2>
+		<div class="footertitle row">
+			<p ng-bind="details.title"></p>
+			<span class="separator-footertitle">|</span>
+			<a id="urlFootertitle" href="{{details.urlWebSite}}" ng-bind="details.urlWebSite | limitTo:50 : 7" target="_blank"></a>
+		</div>
 		<div class="container-detailBlog" ng-repeat="detail in details.blog">			
 			<figure class="image-detalle column">
 				<img ng-src="{{detail.url}}" alt="" width="100%">

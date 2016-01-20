@@ -4,8 +4,8 @@
 		.factory('homeService', ['$http', '$q', function ($http, $q) {
 			
 			var homes = [
-					{portafolio: 'DumarBikesStore', tipo: 'WebDevelopmenth', urlImg: 'image/webdevelopment.jpg'},
-					{portafolio: 'DumarBikesStore2', tipo: 'WebDevelopmenth2', urlImg: 'image/webdevelopment.jpg'}
+					{portafolio: 'DumarBikesStore', tipo: 'WebDevelopment', urlImg: 'image/dumarbikestore.jpg'},
+					{portafolio: 'Portafolio Carlos Rodriguez', tipo: 'WebDevelopment', urlImg: 'image/portfolio.jpg'}
 				];
 			
 			function all() {
