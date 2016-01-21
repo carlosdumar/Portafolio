@@ -308,7 +308,21 @@ footer
 @media only screen and (min-width:1024px)				
 	.container-detailBlog
 		img
-			width 80%
+			width 80%	
+	.datosbasicos
+		.legend
+			font-weight normal
+	.lista-blogs
+		display -webkit-flex
+		display -ms-flexbox
+		display -webkit-box
+		display flex
+		margin-left 2em
+		.blog
+			border-top none
+			margin-right 2em
+			img
+				width 100%
 	.nombreyprofesion
 		display inline
 		margin-left 9em
@@ -318,11 +332,23 @@ footer
 			font-size 1.1em
 	.menu
 		font-size 1.1em
+
 		li
 			color red
 			border-right none
+	.title-pageblog
+		left 1em
+		position absolute
+		top 3em
+		width 95%
+		border-bottom 1px solid #e9e9e9
 	.perfil
 		margin-top 0
+	.portafolio
+		display flex
+		padding-left 1em
+		div
+			margin-right 2em
 	body
 		nav
 			background black
@@ -331,6 +357,7 @@ footer
 			padding-top .8em
 			position absolute
 			right 0
+			text-transform uppercase
 			top 0
 			width 25%
 			li
@@ -344,6 +371,9 @@ footer
 			top .2em
 			img
 				width 60px
+	footer
+		.acerca
+			width 30%
 	
 
 	

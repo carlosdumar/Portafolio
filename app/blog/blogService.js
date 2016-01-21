@@ -9,6 +9,7 @@
 					{title: 'Titulo Post2', url: 'image/webdevelopment.jpg', date: 'Octubre 20, 2014', description: 'Descripcion Blog Descripcion Blog Descripcion Blog Descripcion Blog'},
 					{title: 'Titulo Post3', url: 'image/webdevelopment.jpg', date: 'Octubre 20, 2014', description: 'Descripcion Blog Descripcion Blog Descripcion Blog Descripcion Blog'},
 					{title: 'Titulo Post4', url: 'image/webdevelopment.jpg', date: 'Octubre 10, 2013', description: 'Descripcion Blog Descripcion Blog Descripcion Blog Descripcion Blog'}
+
 				]
 
 			function all() {
