@@ -3,8 +3,10 @@
 	angular.module('contacto.services', [])
 		.factory('contactoService', ['$http', '$q', function ($http, $q) {
 
-			function saveContacto(contacto) {
-				return 'contacto' + contacto + ' guardado';
+			var myRootRef = new Firebase('https://portfoliocarlos.firebaseio.com/');
+
+			function saveContacto(contact) {
+				myRootRef.child("contactos").push(contact);
 			}
 			return {
 				saveContacto: saveContacto

@@ -3,12 +3,12 @@
 		<h2>Contacto</h2>
 		<form action="" class="column">
 			<span>Como te llamas</span>
-			<input type="text" placeholder="name">
+			<input type="text" placeholder="name" ng-model="contact.name" required>
 			<span>Cual es tu email</span>
-			<input type="email" placeholder="email">
+			<input type="email" placeholder="email" ng-model="contact.email" required>
 			<span>Escribeme alguna inquietud que tengas</span>
-			<textarea name="textarea" placeholder="message"></textarea>
-			<button type="submit" class="botonEnviar">Enviar</button>
+			<textarea name="textarea" placeholder="message" ng-model="contact.mesaje"></textarea>
+			<button type="submit" class="botonEnviar" ng-click="saveContact(contact)">Enviar</button>
 		</form>		
 	</article>
 </section>
