@@ -113,7 +113,27 @@ footer
 .bold
 	font-weight bold
 
-
+.comments
+	.buttonComments
+		height 2.8em
+		width 10em
+	.buttonComments:hover
+		background #5cb85c
+		border  #5cb85c
+	.form-comments
+		padding 0 .5em
+		textarea
+			height 10em
+		.form-group
+			width 100%
+	.title-comments
+		font-size 1.7em
+		margin 0 0 1em .5em
+	.comment
+		border-left 2px solid gray
+		margin 0 0 1em .5em
+		padding-left .5em
+		font-size 12px
 .detalle-blog
 	margin-top 45%
 	margin 11em .5em 0 .5em
@@ -122,6 +142,7 @@ footer
 		color #444444
 	.title
 		font-size 1.2em
+
 .image-background	
 	margin 0
 	img
@@ -337,6 +358,35 @@ footer
 		.image-blog
 			img
 				width 70%
+	.comments
+		padding 0 6em
+		.title-comments
+			margin-bottom 2em
+		.list-comment		
+			.comment
+				border-left 2.5px solid gray
+				margin-bottom 1.5em
+				padding 0 1em
+				.commentsbyuser
+					font-size 20px
+				span
+					font-style italic
+		.form-comments
+			.buttonComments
+				border none
+				-webkit-border-radius 4px
+				-moz-border-radius 64px
+				border-radius 4px
+				padding .5em 2em
+				background #ff4500
+				height 3em
+				width 13em
+				font-size 1.1em
+			.buttonComments:hover
+				background #5cb85c
+				background #5cb85c
+			.form-control
+				width 42em
 	.detallePortafolio
 		margin-top 7em
 		.description-detalle
