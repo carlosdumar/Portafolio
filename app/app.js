@@ -10,7 +10,9 @@
 		'blog.controllers',
 		'blog.services',
 		'contacto.services',
-		'contacto.controllers'
+		'contacto.controllers',
+		'detailBlog.directives',
+		'detailBlog.services'
 	]);
 
 	app.config(['$routeProvider', function ($routeProvider) {
