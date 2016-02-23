@@ -3,18 +3,18 @@
 		<img src="image/background.jpg" alt="" width="100%">
 	</figure>
 	<figure class="image-perfil column" >
-		<img src="image/meTW.png" alt="" width="180px">
+		<img src="image/meTW.png" alt="">
 	</figure>
 	<div class="datosbasicos">
 		<span>Carlos Andrés Rodriguez |</span>
 		<span class="legend">Desarrollador Frontend y Emprendedor</span>
 	</div>		
 </section>
-<h1>Portafolio</h1>	
+<h1 class="title-portfolio">Portafolio</h1>	
 <section id="sectionportfolio" class="portafolio">
 	<div ng-repeat="home in homes" class="column">
 		<figure class="image-portafolio column">
-			<a href="#/portafolio/{{home.portafolio}}" class="column"><img ng-src="{{home.urlImg}}" alt="" width="100%"></a>
+			<a href="#/portafolio/{{home.portafolio}}" class="column"><img ng-src="{{home.urlImg}}" alt=""></a>
 		</figure>
 		<a href="#/portafolio/{{home.portafolio}}"><span class="title-portafolio" ng-bind="home.portafolio"></span></a>		
 		<span class="cargo" ng-bind="home.tipo"></span>
