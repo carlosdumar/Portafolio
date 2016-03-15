@@ -5,7 +5,12 @@
 		<figure class="image-blog column">
 			<img ng-src="{{blog.url}}" alt="">
 		</figure>
-		<p ng-bind="blog.description"></p>
+		<div class="descriptionpost" ng-repeat="post in blog.post">
+			<p ng-bind="post.description"></p>
+			<figure>
+				<img ng-src="{{post.urlImgDes}}" alt="" />
+			</figure>
+		</div>
 	</article>
 	<blog-comments></blog-comments>
 </section>

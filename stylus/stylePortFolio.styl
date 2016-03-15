@@ -36,13 +36,13 @@ header
 		width 100%
 	span
 		font-weight bold
-		letter-spacing 1px		
+		letter-spacing 1px
 	.nombre
 		margin-top 1em
 		color white
 		font-size 1.1em
 		justify-content flex-end
-		
+
 	.profesion
 		margin-top 0.5em
 		margin-bottom 1em
@@ -57,7 +57,7 @@ footer
 	margin-top 1em
 	padding-top 1em
 	position absolute
-	width 100%	
+	width 100%
 	span
 		text-transform uppercase
 		color #FF4500
@@ -137,13 +137,14 @@ footer
 .detalle-blog
 	margin-top 45%
 	margin 9.5em .5em 0 .5em
+
 	.time
 		font-size .8em
 		color #444444
 	.title
 		font-size 1.2em
 
-.image-background	
+.image-background
 	margin 0
 	min-height 30%
 	img
@@ -153,8 +154,8 @@ footer
 	margin 8.4em 0 0 0
 	img
 		width 100%
-		-webkit-filter blur(2px)	  
-		
+		-webkit-filter blur(2px)
+
 .image-perfil
 	max-width 100%
 	min-width 20%
@@ -170,7 +171,7 @@ footer
 		border solid 7px white
 		width 100px
 		height 100px
-		
+
 .image-portafolio
 	margin-top 1em
 	max-width 100%
@@ -178,11 +179,15 @@ footer
 		height 180px
 		width 400px
 .image-blog
-	max-width 90%
+	max-width 100%
 	margin-left 1em
 	img
-		width 360px
-		height 260px
+		max-width 100%
+.descriptionpost
+  margin-top .7em
+  figure
+    img
+      max-width 100%
 .lista-blogs
 	margin 12em 0 0 0
 	.blog
@@ -215,7 +220,7 @@ footer
 	margin .5em 0
 	li
 		border-right 1px solid white
-		padding-right 20px		
+		padding-right 20px
 		a
 			color white
 .perfil
@@ -238,7 +243,7 @@ footer
 	margin-top 9em
 	text-align justify
 	.description-detalle
-		padding 0 .5em	
+		padding 0 .5em
 	.image-detalle
 		margin 2em 0 0 0
 	.footertitle
@@ -250,7 +255,7 @@ footer
 		a
 			color #11aea6
 .post
-	width 100%	
+	width 100%
 
 .icon-school:before
 	content "\e907"
@@ -260,17 +265,17 @@ footer
 
 .icon-industry:before
 	content "\e908"
-	
+
 .icon-google-plus3:before
 	content "\e900"
 
 .icon-facebook3:before
 	content "\e901"
 
-.icon-instagram:before 
+.icon-instagram:before
 	content "\e902"
-	
-.icon-twitter3:before 
+
+.icon-twitter3:before
 	content "\e903"
 
 .icon-mail4:before
@@ -278,41 +283,41 @@ footer
 
 .icon-skype:before
 	content "\e905"
-	
+
 .icon-whatsapp:before
 	content "\e906"
 
 .color
 	color #ccc
-	
+
 .row
 	display -webkit-flex
 	display -ms-flexbox
 	display -webkit-box
 	display flex
-	
+
 	-webkit-flex-direction row
 	-ms-flex-direction row
 	-webkit-box-orient horizontal
 	-webkit-box-direction normal
 	flex-direction row
-	
+
 	-webkit-justify-content: space-around;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
-	
+
 .column
 	display -webkit-flex
 	display -ms-flexbox
 	display -webkit-box
 	display flex
-	
+
 	-webkit-flex-direction column
 	-ms-flex-direction column
 	-webkit-box-orient vertical
 	-webkit-box-direction normal
 	flex-direction column
-	
+
 	-webkit-align-items center
 	-ms-flex-align center
 	-webkit-box-align center
@@ -323,13 +328,13 @@ footer
   -ms-flex-align start
   -webkit-box-align start
   align-items flex-start
-  
+
 @media only screen and (min-width: 768px)
 	.logo
-		top .5em						
+		top .5em
 		img
 			width 65px
-	.nombreyprofesion		
+	.nombreyprofesion
 		.nombre
 			font-size 1.3em
 		.profesion
@@ -347,9 +352,9 @@ footer
 	footer
 		.color
 			text-align center
-			
+
 @media only screen and (min-width:1024px)
-				
+
 	.container-detailBlog
 		img
 			width 80%
@@ -379,11 +384,15 @@ footer
 			img
 				width 70%
 				height 500px
+  .descriptionpost
+    margin-top 1.5em
+    p
+      font-size 1.2em
 	.comments
 		padding 0 6em
 		.title-comments
 			margin 1.2em 0
-		.list-comment		
+		.list-comment
 			.comment
 				border-left 2.5px solid gray
 				margin-bottom 1.5em
@@ -412,7 +421,7 @@ footer
 		margin-top 7em
 		.description-detalle
 			padding 0 5em
-				
+
 	.lista-blogs
 		display -webkit-flex
 		display -ms-flexbox
@@ -422,6 +431,9 @@ footer
 		.blog
 			border-top none
 			margin-right 2em
+      .title-blog
+        background red
+        font-size 1.2em        
 			img
 				width 100%
 
@@ -453,7 +465,7 @@ footer
 				width 200px
 		.image-background
 			img
-				height 480px				
+				height 480px
 		.datosbasicos
 			font-size 2em
 			top 15em
@@ -490,6 +502,3 @@ footer
 	footer
 		.acerca
 			width 30%
-	
-
-	
