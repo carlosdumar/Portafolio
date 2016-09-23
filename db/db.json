@@ -1,0 +1,129 @@
+{
+  "title": [
+    { "id": 1, "name": "Como utilizar Firebase en mi Web App" }
+  ],
+  "url": [
+    { "id": 1, "urlpost": "image/firebase.jpg"}
+  ],
+  "date": { "datepost": "Marzo 10, 2016" },
+
+  "blogs" : [
+      {
+        "title": "Como utilizar Firebase en mi Web App",
+        "url": "image/firebase.jpg",
+        "date": "Marzo 10, 2016",
+        "post": [
+          {
+            "description":  "Firebase es una base de datos alojada en la nube que permite acceder a datos a través desde navegadores y apps para dispositivos. Tiene como característica la sincronización en tiempo real de la información. ",
+            "urlImgDes":  " "
+          }, {
+            "description":  "Con Firebase no tienes que preocuparte por desarrollar el Backend en tus aplicaciones ya que por medio de su API la lectura y escritura de datos se hace de una manera muy sencilla. ",
+            "urlImgDes":  " "
+          }, {
+            "description":  "Uno de los puntos mas interesantes de Firebase es que cualquier actualización en la base de datos se vera reflejada en los diferentes dispositivos que acceden al sitio en tiempo real. ",
+            "urlImgDes":  " "
+          }, {
+            "description":  "En este post les mostrare con un sencillo ejemplo como insertar y leer datos usando Firebase y AngularJS se hace en unos cuantos pasos. ",
+            "urlImgDes":  " "
+          }, {
+            "description":  "Usando Firebase ",
+            "urlImgDes":  " "
+          }, {
+            "description":  "Antes de empezar es necesario ilustrarle la base datos con la cual vamos a trabajar, de esta manera entenderemos un poco mas fácil el proceso de inserción de datos a la base de datos. ",
+            "urlImgDes":  "image/subtitle1.jpg "
+          }, {
+            "description":  "Existen dos maneras de utilizar Firebase en nuestras aplicaciones Web: La primera de ellas es agregando el link de las librerías de Firebase de su CDN(Content Developer Network) de la siguiente manera: ",
+            "urlImgDes":  "image/imgDescription6.jpg "
+          }, {
+            "description":  "Recuerda siempre que las etiquetas  ",
+            "urlImgDes":  "image/imgScript.jpg "
+          }, {
+            "description":  "por buenas practicas deben estar ubicadas justo antes del cierre de la etiqueta ",
+            "urlImgDes":  "image/imgBody.jpg "
+          }, {
+            "description":  "La segunda opción es instalar Firebase como dependencia en tu proyecto Web. Para utilizamos el gestor de paquetes el npm (Node Package Manager) e ingresamos los siguientes comandos dentro de la carpeta raíz de nuestro proyecto, de la siguiente manera: ",
+            "urlImgDes":  "image/imgInstallFB.png "
+          }, {
+            "description":  "Después de haber hecho esto, podemos encontrar una carpeta llamada node_modules, donde estarán las dependencias necesarias para utilizar las Apis de Firebase. ",
+            "urlImgDes":  "image/imgModule.png "
+          }, {
+            "description":  "Solo resta agregar el link al archivo firebase.js en nuestra aplicación de la siguiente manera: ",
+            "urlImgDes":  "image/imgPathFB.png "
+          }, {
+            "description":  "Leyendo y Escribiendo en Firebase ",
+            "urlImgDes":  " "
+          }, {
+            "description":  "Una vez tengamos agregado las librerías de Firebase, ya podemos hacer el llamado al constructor Firebase pasándole como parámetro la URL de nuestra base de datos. Con esto tenemos una instancia a la base de datos la que nos permitirá leer y escribir en ella. La forma de hacerlo seria de la siguiente manera: ",
+            "urlImgDes":  "image/imgInstanceFB.png "
+          }, {
+            "description":  "Con esta instancia ya podemos escribir en nuestra base de datos, para este ejemplo cree un método en la capa de servicios de mi aplicación llamado saveComment el cual me permitirá guardar los comentarios que ingresan a mi sitio. El método queda de la siguiente manera: ",
+            "urlImgDes":  "image/imgSaveFB.png "
+          }, {
+            "description":  "Como les habia mencionado anteriormente la base de datos esta compuestas por un nodo padre llamado comments y varios nodos TitlePost, en este caso para hacer la inserción indicamos el nodo padre en la instrucción myRootRef.child(“comments”) y que los datos deben ser guardados en los nodos hijos de la siguente manera: .child(titlePage).push(comment); ",
+            "urlImgDes":  " "
+          }, {
+            "description":  "Para el método de lectura seria de la siguiente manera: ",
+            "urlImgDes":  "image/imgReadFB.png "
+          }, {
+            "description":  "Con el metodo .on() escuchamos por posibles cambios en los datos que ingresan a la base de datos. Con el tipo de evento 'value' le indicamos a Firebase que lea todo el contenido de la base de datos. Value es uno de los cinco eventos que podemos usar para leer datos de la base de datos. ",
+            "urlImgDes":  " "
+          }, {
+            "description":  "Los invito a consultar la guía oficial donde encontraran mas información útil: https://www.firebase.com/docs/web/guide/ ",
+            "urlImgDes":  " "
+          }, {
+            "description":  "De esta manera concluimos este post donde de una manera muy sencilla tenemos a disposición nuestra base datos en Firebase para poder empezar a probar nuestras aplicaciones Frontend. ",
+            "urlImgDes":  " "
+          }, {
+            "description":  "Pronto estaré publicando nuevos post sobre todo el desarrollo Frontend y las diferente herramientas que  podemos utilizar. ",
+            "urlImgDes":  " "
+          }, {
+            "description":  "Los invito a dejar sus comentarios y hasta una próxima ocasión. ",
+            "urlImgDes":  " "
+          }]
+      }],
+    "details" : [
+      {
+        "title": "DumarBikesStore",
+        "subtitle": "Implementación exitosa para nuestro cliente de Bikes E-commerce",
+        "urlWebSite": "http://dumarbikesstore.com.co",
+        "blog": [
+          { "url": "image/detailsDBS.jpg", "text": "Por cada producto de la tienda se creo una descripción detallada de cada uno, en la cual se especifica las caracteristicas y precios."},
+          { "url": "image/manillar.jpg", "text": "Se brinda la opcion para que el usuario pueda escojer diferentes imagens de un producto para ver un mayor detalle de estos. El menu fue incluido al lado de la imagen principal."},
+          { "url": "image/footerDBS.jpg", "text": "La pagina se diseño con las ultimas tendencias web. Un ejemplo de esto es el footer moderno, en donde ya no aparece opciones tipicas como 'Acerca de Nosotros', sino que proporciona las opcines para un contacto mas directos por medio de las redes sociales actuales."}
+        ]
+      },
+      {
+        "title": "Portafolio Carlos Rodriguez",
+        "subtitle": "Atractivo y Simple portafolio online para profesionales modernos",
+        "urlWebSite": "http://carlosdumar.github.io/Portafolio/",
+        "blog": [
+          { "url": "image/portfolio.jpg", "text": "Portada realizada con diseño intuitivo y agradable al usuario. Se da enfasis en el cargo y la pasion del profesional como uno de los atractivos que mas se buscar mostrar, sumado a esto se inclue un fondo paisajistico para una mayor sensacion de tranquilidad al lector."},
+          { "url": "image/cv-portfolio.jpg", "text": "Hoy en dia en indispensable tener el CV no solo online sino que tambien es importante en una pagina personalizada resaltando los logros mas importantes."}
+        ]
+      }
+    ],
+    "homes" : [
+        {"portafolio": "DumarBikesStore", "tipo": "WebDevelopment", "urlImg": "image/dumarbikesstore.jpg"},
+        {"portafolio": "Portafolio Carlos Rodriguez", "tipo": "WebDevelopment", "urlImg": "image/portfolio.jpg"}
+    ],
+    "curriculums" :
+      {
+        "introduccion": "Ingeniero de Telecomunicaciones con experiencia laboral en el análisis, diseño, implementación, pruebas y despliegue de software, servicio al cliente e infraestructura de red. Soy una persona con gran capacidad de trabajo en equipo, capacidad de adaptación y aprendizaje, creatividad y dinamismo organizacional. Dominio de los idiomas Ingles y Portugués en un nivel Intermedio y Avanzado respectivamente, tanto escrito como hablado.",
+        "experiencias": [
+          { "empresa": "Intergrupo", "cargo": "Sofware Developer', ano: '2010 - Presente", "descripcion": "Mi trabajo actualmente en la empresa consiste en implementar pruebas de desarrollador para validar que la implementación realizada está trabajando adecuadamente y es apta para pasar a pruebas internas."},
+          { "empresa": "Servinte S.A", "cargo": "Analista de Desarrollo", "ano": "2009 - 2010", "descripcion": "Mi trabajo en la empresa fue la del Análisis, desarrollo, pruebas y puesta en funcionamiento del software desarrollado para todas las áreas involucradas en la gestión de pacientes, facturación, contabilidad, admisiones y suministros en los hospitales y clínicas clientes."},
+          { "empresa": "Bynet System & Service", "cargo": "Auxiliar de Proyectos", "ano": "2009", "descripcion": "Analizar, desarrollar y ejecutar proyectos de redes en empresas, colegios, universidades y demás instituciones educativas en el que era necesario tener un sistema de video vigilancia, conectividad, movilidad y seguridad en todas las instalaciones físicas."}
+        ],
+        "estudios": [
+          { "institucion": "Universidad Santo Tomas", "programa": "Ingenieria de Telecomunicaiones", "ano": "2009", "descripcion": ""},
+          { "institucion": "Universidad EAFIT", "programa": "Diplomado en Arquitectura y Desarrollo de Software para Internet", "ano": "2010 - Presente", "descripcion": ""},
+          { "institucion": "Universidad Pontificia Bolivariana", "programa": "Especializacion en Gerencia", "ano": "2015 - Presente", "descripcion": ""}
+        ],
+        "cursos": [
+          { "nombre": "Curso Profesional de Frontend", "institucion": "Platzi", "ano": "2014", "url": "https://platzi.com/usuarios/carlosdumar/", "descripcion": ""},
+          { "nombre": "Curso Profesional de Git y GitHub", "institucion": "Platzi", "ano": "2015", "url": "https://platzi.com/usuarios/carlosdumar/", "descripcion": ""},
+          { "nombre": "Curso Portugues", "institucion": "Instituto de Lingua Portuguesa", "url": "http://www.ilpcolombia.com.co/", "ano": "2013", "descripcion": ""}
+        ]
+      }
+    
+  }

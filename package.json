@@ -1,0 +1,19 @@
+{
+  "name": "portafoliocarlos",
+  "version": "1.0.0",
+  "description": "In this project you'll see the source code of portfolio of Carlos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosdumar/Portafolio.git"
+  },
+  "author": "Carlos Andres Rodriguez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosdumar/Portafolio/issues"
+  },
+  "homepage": "https://github.com/carlosdumar/Portafolio#readme"
+}
