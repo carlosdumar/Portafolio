@@ -1,3 +1,4 @@
+![Code Climate](https://codeclimate.com/github/carlosdumar/Portafolio/badges/gpa.svg)
 # Portafolio
 
 This is my own portfolio.
