@@ -7,7 +7,7 @@
 		<h2>Introducción</h2>
 		<p ng-bind="cv.introduccion">s</p>
 		<h3>Experiencia</h3>
-		<div class="experiencia column top" ng-repeat="ex in cv.experiencias">			
+		<div class="experiencia column top" ng-repeat="ex in cv.experiencias">
 			<span class="nombre-empresa icon-industry bold">
 				<span ng-bind="ex.empresa"></span>
 			</span>
@@ -16,7 +16,7 @@
 			<span class="descripcion" ng-bind="ex.descripcion"></span>
 		</div>
 		<h3>Estudios</h3>
-		<div class="estudios column top" ng-repeat="estudio in cv.estudios">			
+		<div class="estudios column top" ng-repeat="estudio in cv.estudios">
 			<span class="nombre-institucion icon-bank bold">
 				<span ng-bind="estudio.institucion"></span>
 			</span>

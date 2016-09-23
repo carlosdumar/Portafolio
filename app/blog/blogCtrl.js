@@ -1,26 +1,40 @@
 (function () {
 
-	angular.module('blog.controllers', [])
-		.controller('BlogController', ['$scope', 'blogService', '$timeout', function ($scope, blogService, $timeout) {
+	angular
+		.module('blog.controllers', [])
+		.controller('BlogController', BlogController)
+		.controller('DetailBlogController', DetailBlogController);
 
-			$timeout(function(){
-			    $scope.listaBlogs = {};
+			BlogController.$inject = ['blogService', '$scope'];
 
-			    blogService.all().then(function (data) {
-			    	$scope.listaBlogs = data;
-			    })
-			 });
+			function BlogController(blogService, $scope) {
+				$scope.listaBlogs = [];
 
-		}])
-		.controller('DetailBlogController',['$scope', '$routeParams', 'blogService', function ($scope, $routeParams, blogService) {
+				getPosts();
 
-			var blogName = $routeParams.name
+				function getPosts() {
+					return blogService.getPosts()
+						.then(function(data){
+							$scope.listaBlogs = data;
+							return $scope.listaBlogs;
+						});
+				}
+			}
 
-			$scope.blog = {};
+			DetailBlogController.$inject = ['blogService', '$scope', '$routeParams'];
 
-			blogService.byName(blogName)
-				.then(function (data) {
-					$scope.blog = data;	
-				});
-		}]);
+			function DetailBlogController(blogService, $scope, $routeParams) {
+
+				$scope.blog = [];
+				var blogName = $routeParams.name
+
+				getPostByName(blogName);
+
+				function getPostByName(name) {
+					return blogService.getPostByName(name)
+						.then(function(data) {
+							$scope.blog = data;
+						});
+				}
+			}
 })();

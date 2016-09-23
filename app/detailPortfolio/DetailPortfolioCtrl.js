@@ -1,14 +1,18 @@
 (function() {
 
-	angular.module('detailPortfolio.controllers', [])
-		.controller('DtllPortafolioController', ['$scope', '$routeParams', 'detailPortfolioService', function ($scope, $routeParams, detailService) {
+	angular
+		.module('detailPortfolio.controllers', [])
+		.controller('DtllPortafolioController', DtllPortafolioController)
 
-			var name = $routeParams.name;
-			$scope.details = {};
+			DtllPortafolioController.$inject = ['detailPortfolioService', '$scope', '$routeParams'];
 
-			detailService.byName(name)
-				.then(function (data) {
-					$scope.details = data;	
-				});
-		}]);
+			function DtllPortafolioController(detailPortfolioService, $scope, $routeParams) {
+				var name = $routeParams.name;
+				$scope.details = {};
+
+				detailPortfolioService.getDetailPortfolioByName(name)
+					.then(function(data) {
+						$scope.details = data;
+					});
+			}
 })();

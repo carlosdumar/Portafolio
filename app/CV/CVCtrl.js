@@ -1,9 +1,14 @@
 (function () {
-	angular.module('cv.controllers', [])
-		.controller('CVController', ['$scope', '$routeParams', 'cvService', function ($scope, $routeParams, cvService) {
+	angular
+		.module('cv.controllers', [])
+		.controller('CVController', CVController)
 
-			cvService.all().then(function (data) {
-				$scope.cv = data;
-			})
-		}]);
+		CVController.$inject = ['cvService', '$scope'];
+
+		function CVController(cvService, $scope) {
+			cvService.getCV()
+				.then(function(data) {
+					$scope.cv = data;
+				});
+		}
 })();

@@ -1,10 +1,15 @@
 (function() {
 
-	angular.module('home.controller', [])
-		.controller('HomeController', ['$scope', '$routeParams', 'homeService', function ($scope, $routeParams, homeService) {
+	angular
+		.module('home.controller', [])
+		.controller('HomeController', HomeController)
 
-			homeService.all().then(function (data) {
-				$scope.homes = data;
-			})
-		}]);
+			HomeController.$inject = ['homeService', '$scope'];
+
+			function HomeController(homeService, $scope) {
+				homeService.getHome()
+					.then(function(data) {
+						$scope.homes = data;
+					});
+			}
 })();
