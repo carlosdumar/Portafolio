@@ -8,7 +8,7 @@
 					{
 						title: 'DumarBikesStore',
 						subtitle: 'Implementación exitosa para nuestro cliente de Bikes E-commerce',
-						urlWebSite: 'http://dumarbikesstore.com.co',
+						urlWebSite: 'http://www.dumarbikesstore.com.co',
 						blog: [
 							{ url: 'image/detailsDBS.jpg', text: 'Por cada producto de la tienda se creo una descripción detallada de cada uno, en la cual se especifica las caracteristicas y precios.'},
 							{ url: 'image/manillar.jpg', text: 'Se brinda la opcion para que el usuario pueda escojer diferentes imagens de un producto para ver un mayor detalle de estos. El menu fue incluido al lado de la imagen principal.'},
