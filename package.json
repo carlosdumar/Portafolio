@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "In this project you'll see the source code of portfolio of Carlos.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/carlosdumar/Portafolio.git"
@@ -15,5 +12,10 @@
   "bugs": {
     "url": "https://github.com/carlosdumar/Portafolio/issues"
   },
-  "homepage": "https://github.com/carlosdumar/Portafolio#readme"
+  "homepage": "https://github.com/carlosdumar/Portafolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-webserver": "^0.9.1"
+  }
 }
